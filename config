@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        bootstrap: true
+eureka:
+  client:
+    eureka-server-u-r-l-context: http://localhost:8080/eureka
+# mysql 属性配置
+datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://192.168.3.13:3306/testworkbase
+  username: root
+  password: wyj66018
